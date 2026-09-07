@@ -80,14 +80,17 @@
     <div class="card">
       <div class="version-row">
         <h2>Latest version</h2>
-        <span class="version-badge">v1.1.0 (build 8)</span>
+        <span class="version-badge">v1.2.0 (build 9)</span>
       </div>
-      <div class="whatsnew">• Fixes the app freezing shortly after opening. On some phones the automatic backup could run at almost any moment — including the instant you finished a practice session — and a large history took long enough that Android reported the app as not responding. That is the main reason to take this update.
-• Backups now happen when you open the app, not on a timer. If you have practised, the app backs up at most once every six hours; if nothing was flagged, it still checks about once a day in case something else changed. When nothing is due, opening the app does no work at all.
-• Backing up got much faster. When no other device has written to Drive since your last upload, the app skips the download-and-combine step entirely — on a large history that took a backup from about 13 seconds to under 2.
-• When your other device HAS added progress, the app now says so with a "Syncing backups from different devices" screen instead of appearing to freeze.
-• Finishing a practice session no longer triggers an upload. It just notes that there is something to back up, and the upload waits until you next open the app.
-• Android: updates now install from inside the app. Tap "Download &amp; install" and you get a progress bar, then Android's own confirmation — no browser, no hunting through Downloads, and no uninstalling first. Your progress is backed up before the install and is kept.</div>
+      <div class="whatsnew">• A reported question can now be fixed for everyone, without waiting for the next question bank. When a question you have is corrected or withdrawn, you get a notification saying exactly what changed — "the correct answer changed from C to D" — and your score for that one question is reset, so it comes back around instead of staying marked as mastered against an answer that was wrong.
+• Anything you answer after a correction counts normally. Only the attempts made against the old answer are discarded, and that stays true through backups and restores.
+• A new Question corrections screen (in Settings) keeps the full record, so clearing a notification loses nothing.
+• Fixes a case where the same question was corrected twice and you were shown both notifications. Only the latest one is kept now, and duplicates already in your list are cleaned up when you open the app.
+• Settings has been reorganised. Review Progress, Question corrections, Sync Questions, your question bank, AI chat and Log out are all one tap from the top; Appearance, Backup &amp; sync and Data management moved into their own screens.
+• New: Deleted questions (Settings → Data management). If you have deleted questions in bulk you can now see what went, grouped by the day you deleted it, and undo one batch without clearing every deletion you have ever made.
+• Your progress is backed up to Drive before a question bank update, not just before an app install. A bank update can withdraw questions, and their answer history goes with them.
+• Review Progress now leads with the question and its correct answer, with your accuracy, attempts and how many public exams it has appeared in underneath. Questions you are equally bad at are ordered by how often they turn up in exams.
+• Chapter cards have a Review Progress chip that opens straight to that chapter.</div>
 
       <div class="downloads">
         <!-- These auto-resolve to the newest GitHub Release asset, so you never

@@ -80,13 +80,13 @@
     <div class="card">
       <div class="version-row">
         <h2>Latest version</h2>
-        <span class="version-badge">v1.7.0 (build 15)</span>
+        <span class="version-badge">v1.8.0 (build 16)</span>
       </div>
-      <div class="whatsnew">• <strong>Opening the app is far quicker.</strong> When the app had to sign you in again it was downloading your whole progress backup from Google Drive every single time — even when nothing had changed and yours was the only device. It now checks first, and skips it when there is genuinely nothing to bring back. On a mid-range phone that stretch went from about 40 seconds to just over one.
-• <strong>The startup screen tells you the truth.</strong> It used to say "Downloading question library…" for everything it did, including the parts that were not downloading anything — so it looked stuck on a download that had already finished. It now names the step it is actually on: checking, downloading, setting up, restoring your progress, almost ready.
-• <strong>Your library survives a phone security fault.</strong> Some Android phones lose the security key that unlocks the app's stored data. The app used to delete that data and start over. It now sets it aside, keeps a copy of the key on your account, and puts everything back the next time you sign in.
-• <strong>Practice sessions are counted properly.</strong> Tapping Start twice — easy to do when a big chapter takes a moment to load — used to record two or three sessions for one sitting, which then showed up in your stats. Start now also says "Starting…" instead of looking like nothing happened.
-• <strong>New: Settings → Performance.</strong> If the app feels slow on your phone, turn on speed logging, use it normally, then open the speed report to see what was slow — and save it to send on. It is off until you turn it on, and it does not slow the app down.</div>
+      <div class="whatsnew">• <strong>Importing your own question file works again.</strong> Files that appeared greyed out and could not be tapped — anything downloaded in Safari, sent by AirDrop, or kept in a cloud folder — can now be picked. Large files no longer make the app sit still while they load. And when a file is in iCloud but has not been downloaded to the phone yet, the app now says so, instead of doing nothing at all when you tap it.
+• <strong>Question banks can be sent out about ten times smaller.</strong> A published bank can now be compressed, so there is roughly a tenth as much to download and about a tenth as much work to open it. The difference is biggest on older phones, where opening a full bank could take several seconds on its own. Nothing changes for banks already on your phone.
+• <strong>Android no longer takes the app's security key into its own backup.</strong> Android was quietly backing up and restoring the app's stored security data, and a restored copy could no longer be unlocked on the phone it landed on. That is what left some phones asking you to sign in every single time you opened the app. The app now keeps itself out of Android's backup entirely. Your progress is still backed up to Google Drive by the app itself, exactly as before.
+• <strong>A phone with a broken security store now says so.</strong> If the app cannot remember your sign-in two launches running, the sign-in screen explains why and tells you that reinstalling fixes it — rather than asking you to sign in again, every time, with no explanation.
+• <strong>Removing a question bank now actually removes it.</strong> On in-house builds it was leaving the whole library behind on the phone, so the space was never freed and old questions could reappear if the bank was added back.</div>
 
       <div class="downloads">
         <!-- These auto-resolve to the newest GitHub Release asset, so you never
